@@ -1,11 +1,7 @@
-// ─────────────────────────────────────────────────────────────────────────────
-// PORTFOLIO CONTENT — edit this file to update everything.
-// All links, copy, projects, skills, experience, and social URLs live here.
-// ─────────────────────────────────────────────────────────────────────────────
+// Portfolio content. Edit this file to update links, copy, projects, skills, experience, and footer details.
 
 window.CONTENT = {
 
-  // ── Links — change once, updates everywhere ───────────────────────────────
   links: {
     email:      "chprko2001@gmail.com",
     github:     "https://github.com/prasannanjaneyreddychalla",
@@ -17,20 +13,20 @@ window.CONTENT = {
 
   hero: {
     name:         "Prasannanjaneya Reddy",
-    title:        "Software Engineer. Infrastructure. AI. F1 fan.",
-    tagline:      "I like figuring out why things break, then making sure they don't.",
-    subTagline:   "Graduate assistant at ASU. Ex-engineer at Sears Holdings.",
+    title:        "Software engineer building AI and infrastructure systems.",
+    tagline:      "I like finding where systems break, then making them easier to trust.",
+    subTagline:   "Graduate service assistant at ASU. Former software engineer at Sears Holdings India.",
     location:     "Tempe, AZ",
-    availability: "Open to roles in software engineering, backend, infra, and AI/ML"
+    availability: "Open to software engineering, backend, infrastructure, and AI/ML roles"
   },
 
   about: {
-    intro: "I ask a lot of \"why\" questions. Mostly to myself first.",
-    note:  "I like digging into a system, building my own understanding, then talking to the right people to see what I missed. That's how I ended up across infrastructure, backend, AI, and data.",
+    intro: "I build practical software at the edge of backend systems, cloud infrastructure, and AI.",
+    note:  "My favorite work starts with a messy system: unclear logs, repeated manual steps, slow workflows, or models that look good in a demo but fail when you inspect them. I like turning that mess into something reliable.",
     bio: [
-      "Software engineer finishing my Master's at ASU. I build things that are useful, not just interesting.",
-      "Huge F1 fan. I think about systems the same way — strategy, tradeoffs, tiny decisions that compound. Minus the carbon fiber.",
-      "Looking for early-career roles in software engineering, backend, infra, or AI/ML."
+      "I am finishing my Master's in AI and Robotics at Arizona State University, where I support AI, robotics, medical imaging, and LLM-related research work.",
+      "Before ASU, I worked on production infrastructure at Sears Holdings India. That meant AWS at scale, cost visibility, compliance automation, Linux hardening, deployment workflows, and the usual fun of figuring out why something broke at the worst possible time.",
+      "I am looking for early-career software engineering roles where I can work on backend systems, infrastructure, developer tools, or applied AI systems that people actually use."
     ]
   },
 
@@ -38,38 +34,37 @@ window.CONTENT = {
     {
       company: "Arizona State University",
       role: "Graduate Service Assistant",
-      period: "Jan 2026 — Present",
+      period: "Jan 2026 - Present",
       location: "Tempe, Arizona",
       highlights: [
-        "Supporting AI and Robotics research at ASU.",
-        "Training ML models on HPC clusters with SLURM.",
-        "Working on medical imaging and LLM projects."
+        "Support AI and robotics research projects across model training, evaluation, and experimentation.",
+        "Train and run machine learning workloads on HPC clusters using SLURM.",
+        "Work on medical imaging and LLM projects where reproducibility and clear experiment tracking matter."
       ]
     },
     {
       company: "Sears Holdings India",
       role: "Software Engineer",
-      period: "Feb 2025 — Aug 2025",
+      period: "Feb 2025 - Aug 2025",
       location: "Hyderabad, India",
       highlights: [
-        "Managed cloud infrastructure across 4,000+ instances on AWS.",
-        "Built cost dashboards tracking ~$1.2M monthly spend — helped cut costs by 11–12%.",
-        "Automated compliance checks, stale resource cleanup, and deployment workflows.",
-        "Maintained PCI DSS network setup across VPCs, load balancers, and databases.",
-        "Handled Linux patching and hardening across containers and AMIs."
+        "Managed AWS infrastructure across 4,000+ instances and helped teams keep production systems stable.",
+        "Built cost dashboards for roughly $1.2M in monthly AWS spend, helping reduce cloud costs by 11-12%.",
+        "Automated compliance checks, stale resource cleanup, reporting tasks, and deployment workflows.",
+        "Maintained PCI DSS network setups across VPCs, load balancers, databases, and access controls.",
+        "Worked on Linux patching, AMI hardening, containers, and cloud operations tasks that needed careful execution."
       ]
     },
     {
       company: "Sears Holdings India",
       role: "Associate Software Engineer",
-      period: "Nov 2022 — Jan 2025",
+      period: "Nov 2022 - Jan 2025",
       location: "Hyderabad, India",
       highlights: [
-        "Automated reporting across 65,000+ Control-M jobs.",
-        "Wrote scripts to find and clean up unused on-prem resources.",
-        "Handled access controls, CloudFormation StackSets, and Linux ops.",
-        "Turned repetitive support tasks into reusable Python and shell tools.",
-        "Got hands-on with Kafka, IBM MQ, ZooKeeper, and AWS CodePipelines."
+        "Automated reporting across 65,000+ Control-M jobs so teams could find failures and patterns faster.",
+        "Wrote Python and shell scripts to identify unused on-prem resources and reduce repetitive support work.",
+        "Handled access controls, CloudFormation StackSets, Linux operations, and application support workflows.",
+        "Worked with Kafka, IBM MQ, ZooKeeper, AWS CodePipeline, and hybrid infrastructure systems."
       ]
     }
   ],
@@ -77,54 +72,54 @@ window.CONTENT = {
   projects: [
     {
       title: "AutoResearch",
-      subtitle: "Multi-Agent Research Pipeline",
-      description: "Type a question, get a sourced Markdown report back. It breaks the question down, searches the web, checks its own coverage, and saves a full trace of what happened.",
-      outcome: "Every step is logged and inspectable — which is more than most agentic systems can say.",
+      subtitle: "Multi-agent research pipeline",
+      description: "A research assistant that takes a question, breaks it into smaller tasks, searches for sources, checks coverage, and produces a sourced Markdown report.",
+      outcome: "Built for traceability: each step is logged so the final answer can be reviewed instead of blindly trusted.",
       tags: ["Python", "LangChain", "Multi-Agent", "RAG", "OpenAI API"],
       github: "https://github.com/prasannanjaneyreddychalla/deepresearch-agentic",
       year: "2026"
     },
     {
       title: "cv-smith",
-      subtitle: "AI-Powered CV Generator",
-      description: "Paste a job URL, get a tailored CV. Built with FastAPI and LangChain because rewriting your CV for every application is exactly the kind of thing a computer should do.",
-      outcome: "Does in seconds what used to take an hour. Structured output, no hallucinated job titles.",
+      subtitle: "AI-powered CV generator",
+      description: "A FastAPI and LangChain app that uses a job posting to generate a tailored CV draft from structured profile data.",
+      outcome: "Cuts down the repetitive CV-editing loop while keeping the output grounded in real experience and role requirements.",
       tags: ["FastAPI", "LangChain", "Python", "Web Scraping"],
-      github: "",
+      github: "https://github.com/prasannanjaneyreddychalla/cv-smith",
       year: "2026"
     },
     {
       title: "Chest X-Ray Diagnosis",
-      subtitle: "Deep Learning on Medical Imaging",
-      description: "Trained ResNet50, DenseNet, and NODE21 on large chest X-ray datasets on ASU's HPC cluster. Full eval pipeline with ROC/AUC and experiment tracking.",
-      outcome: "Reproducible workflows, W&B tracking, and proper classification + localization pipelines.",
+      subtitle: "Deep learning for medical imaging",
+      description: "Trained and evaluated ResNet50, DenseNet, and NODE21-based workflows on chest X-ray datasets using ASU HPC resources.",
+      outcome: "Focused on reproducible training, ROC/AUC evaluation, experiment tracking, and classification plus localization workflows.",
       tags: ["PyTorch", "ResNet50", "DenseNet", "NODE21", "SLURM", "W&B"],
       github: "https://github.com/prasannanjaneyreddychalla/Chest-X-Ray-Medical-Diagnosis-with-Deep-Learning",
       year: "2025"
     },
     {
       title: "RepoLens",
-      subtitle: "Repository Insights Dashboard",
-      description: "A frontend tool that reads a GitHub repo and surfaces what's actually going on — tech stack, complexity signals, modernization ideas, and an Auto-PR preview.",
-      outcome: "Useful for understanding a codebase before you have to live in it.",
+      subtitle: "Repository insights dashboard",
+      description: "A frontend tool for quickly understanding a GitHub repository: tech stack, complexity signals, modernization ideas, and possible cleanup work.",
+      outcome: "Designed to help developers get context before they spend hours digging through a new codebase.",
       tags: ["React", "TypeScript", "GitHub API", "Developer Tooling"],
       github: "https://github.com/prasannanjaneyreddychalla/repo-insights-dashboard",
       year: "2025"
     },
     {
       title: "Local AI Assistant",
-      subtitle: "Fully Local RAG System",
-      description: "An AI system that runs entirely on your machine — no cloud, no telemetry. Uses Ollama, LangChain, and ChromaDB for document search and infra workflows.",
-      outcome: "Fast, private, and actually useful for local document work.",
+      subtitle: "Private local RAG system",
+      description: "A local document assistant built with Ollama, LangChain, and ChromaDB for search and question answering without sending files to the cloud.",
+      outcome: "Useful for private document workflows where control, speed, and local execution matter more than flashy demos.",
       tags: ["Ollama", "LangChain", "RAG", "ChromaDB", "Python"],
       github: "",
       year: "2024"
     },
     {
       title: "Deep Agents",
-      subtitle: "LangGraph Agent Workflows",
-      description: "Hands-on LangGraph implementations — tool use, multi-step reasoning, agent orchestration. Built to understand how these systems actually fail, not just how they work on paper.",
-      outcome: "Covers ReAct, ACT, and tool-calling patterns with real benchmarking.",
+      subtitle: "LangGraph agent workflows",
+      description: "Hands-on implementations of agent patterns, tool use, multi-step workflows, and benchmarking experiments with LangGraph and LangChain.",
+      outcome: "Built to understand where agents fail in practice, not just how they look in tutorials.",
       tags: ["LangGraph", "LangChain", "ReAct", "Agents", "Python"],
       github: "https://github.com/prasannanjaneyreddychalla/deep-agents",
       year: "2026"
@@ -132,25 +127,25 @@ window.CONTENT = {
   ],
 
   skills: [
-    { group: "Cloud", items: ["AWS EC2, S3, IAM", "VPC, RDS, CloudFormation", "OpenStack", "Docker", "Kubernetes"] },
-    { group: "AI and LLMs", items: ["LangChain", "LangGraph", "Ollama", "ChromaDB", "RAG", "Multi-Agent Systems"] },
-    { group: "Machine Learning", items: ["PyTorch", "ResNet50", "DenseNet", "NODE21", "SLURM / HPC", "W&B"] },
-    { group: "Data", items: ["PostgreSQL", "DynamoDB", "MongoDB", "MySQL", "Kafka", "ZooKeeper"] },
-    { group: "Languages", items: ["Python", "Shell scripting", "SQL", "TypeScript", "FastAPI", "React"] },
-    { group: "Systems", items: ["Linux", "AWS Cost Explorer", "BMC Control-M", "Grafana", "VMware", "LDAP"] }
+    { group: "Backend and Automation", items: ["Python", "FastAPI", "Shell scripting", "SQL", "REST APIs", "Workflow automation"] },
+    { group: "Cloud and Infrastructure", items: ["AWS EC2, S3, IAM", "VPC, RDS, CloudFormation", "Docker", "Kubernetes", "OpenStack", "Linux"] },
+    { group: "AI and LLM Systems", items: ["LangChain", "LangGraph", "RAG", "ChromaDB", "Ollama", "Agent workflows"] },
+    { group: "Machine Learning", items: ["PyTorch", "ResNet50", "DenseNet", "SLURM / HPC", "W&B", "Model evaluation"] },
+    { group: "Data and Messaging", items: ["PostgreSQL", "DynamoDB", "MongoDB", "MySQL", "Kafka", "ZooKeeper"] },
+    { group: "Operations", items: ["AWS Cost Explorer", "BMC Control-M", "Grafana", "CloudFormation StackSets", "LDAP", "PCI DSS workflows"] }
   ],
 
   education: [
     {
       school: "Arizona State University",
       degree: "Master's in AI and Robotics",
-      period: "Aug 2025 — Jul 2027",
+      period: "Aug 2025 - Jul 2027",
       location: "Tempe, Arizona"
     },
     {
       school: "Lovely Professional University",
       degree: "Bachelor of Technology",
-      period: "Jun 2020 — Jul 2023",
+      period: "Jun 2020 - Jul 2023",
       location: "Punjab, India"
     }
   ],
@@ -187,7 +182,7 @@ window.CONTENT = {
       badge: null
     },
     {
-      name: "Introduction to LangChain – Python",
+      name: "Introduction to LangChain - Python",
       issuer: "LangChain",
       issued: null,
       badge: null
@@ -202,24 +197,24 @@ window.CONTENT = {
 
   areas: [
     {
-      name: "AI and LLM Systems",
-      description: "Building AI that's grounded and testable — RAG pipelines, agents, local inference. Not just impressive in a demo.",
-      items: ["Multi-Agent Workflows", "RAG / Retrieval", "LangChain / LangGraph", "Local Inference", "Agent Benchmarking"]
+      name: "Backend and infrastructure",
+      description: "I like work where reliability matters: APIs, automation, cloud services, Linux systems, and the glue code that keeps teams moving.",
+      items: ["FastAPI", "Python", "AWS", "Linux", "Automation"]
     },
     {
-      name: "Cloud and Infrastructure",
-      description: "AWS at real scale. Cost visibility, compliance, and turning repeated problems into tools so they stop being problems.",
-      items: ["AWS EC2, S3, IAM", "Cost Dashboards", "CloudFormation", "Linux Hardening", "Hybrid Cloud"]
+      name: "Applied AI systems",
+      description: "I am interested in AI systems that can be inspected, evaluated, and improved instead of treated like magic boxes.",
+      items: ["RAG", "Agents", "Evaluation", "LangChain", "LangGraph"]
     },
     {
-      name: "Machine Learning",
-      description: "Training models on HPC, evaluating properly, and making experiments reproducible. Medical imaging focus.",
-      items: ["Computer Vision", "Medical Imaging", "ResNet / DenseNet", "SLURM / HPC", "W&B Tracking"]
+      name: "Machine learning workflows",
+      description: "I have worked with model training, HPC jobs, experiment tracking, and medical imaging pipelines where the process matters as much as the model.",
+      items: ["PyTorch", "SLURM", "W&B", "Medical imaging", "Evaluation"]
     },
     {
-      name: "Backend and Automation",
-      description: "FastAPI, Python, shell scripts. If something is repetitive, it should be automated. That's not laziness, that's engineering.",
-      items: ["FastAPI", "Python Automation", "Shell Scripting", "Data Pipelines", "Deployment Workflows"]
+      name: "Developer tools",
+      description: "I enjoy building tools that remove busywork: dashboards, scripts, cleanup jobs, repo analysis, and small systems that make larger systems easier to manage.",
+      items: ["Dashboards", "Scripts", "GitHub API", "Cost visibility", "Ops tooling"]
     }
   ],
 
@@ -227,7 +222,7 @@ window.CONTENT = {
     {
       place: "Tempe, Arizona",
       date: "August 2025",
-      caption: "Moved here for ASU. Desert heat, good sunsets, completely different pace from Hyderabad. Still adjusting.",
+      caption: "Moved here for ASU. The desert heat was not subtle, but the sunsets made a strong argument.",
       photos: []
     }
   ],
@@ -235,23 +230,23 @@ window.CONTENT = {
   thoughts: [
     {
       date: "2026-06-01",
-      text: "RAG that can actually be evaluated is rare. It almost always breaks at retrieval, not the model."
+      text: "RAG systems usually fail before the model answers. Retrieval quality decides more than people admit."
     },
     {
       date: "2026-04-10",
-      text: "Agentic systems that technically work and ones with useful traces are very different things."
+      text: "Agent traces matter. If you cannot inspect the steps, you are mostly trusting the demo."
     },
     {
       date: "2025-11-20",
-      text: "Every F1 strategy call feels obvious five laps too late. Software is the same."
+      text: "F1 strategy calls look obvious five laps later. Debugging production systems has the same energy."
     },
     {
       date: "2025-09-01",
-      text: "The gap between knowing how something works and building it is where the learning actually happens."
+      text: "The gap between understanding a system and building one is where the useful learning happens."
     },
     {
       date: "2025-08-14",
-      text: "Moving somewhere new shows how much of the old routine was just running on autopilot."
+      text: "Moving to a new place makes you notice which parts of your routine were actually holding things together."
     }
   ],
 
@@ -259,6 +254,6 @@ window.CONTENT = {
     favoriteTeam: "Ferrari",
     favoriteDriver: "Lewis Hamilton",
     currentSeason: "2026",
-    tagline: "Hamilton / Ferrari / 2026 — the season that shouldn't have been possible."
+    tagline: "F1 fan. Mostly Ferrari, which builds character whether you ask for it or not."
   }
 };
